@@ -13,8 +13,7 @@ Dim TickCount As Long
 Dim LastRowA As Long
 'last row column I
 Dim LastRowI As Long
-'Variable for percent change
-Dim PercentChange As Double
+
 
         
 'Get the WorksheetName
@@ -53,7 +52,7 @@ ws.Cells(TickCount, 10).Value = ws.Cells(i, 6).Value - ws.Cells(j, 3).Value
  'Calculate and place total volume in column L
 ws.Cells(TickCount, 12).Value = WorksheetFunction.Sum(Range(ws.Cells(j, 7), ws.Cells(i, 7)))
                    
- 'Increase TickCount + 1
+ 'Increase TickerCount + 1
  TickCount = TickCount + 1
                 
 'Set new start row of the ticker
